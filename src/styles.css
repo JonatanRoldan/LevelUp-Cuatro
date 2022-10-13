@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.contenedor .pokemon {
+    text-align: center;
+    background-color: aqua;
+}
+
+.contenedor .pokemon .titulo {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contenedor .pokemon .poster {
+    width: 100%;
+    margin-top: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.paginacion {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.paginacion button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    background: teal;
+    color: aqua;
+    border-radius: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    transition: .3s ease all;
+}
